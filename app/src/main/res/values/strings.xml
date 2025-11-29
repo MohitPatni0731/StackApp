@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    String Resources for StackApp
+-->
+<resources>
+    <!-- App Information -->
+    <string name="app_name">StackApp</string>
+    <string name="app_subtitle">LIFO Stack • Max: 3 • Values: 0–9</string>
+    
+    <!-- Labels -->
+    <string name="current_stack">Current Stack</string>
+    <string name="or_enter_command">Or type a command</string>
+    
+    <!-- Hints -->
+    <string name="hint_value">0–9</string>
+    <string name="hint_command">push 5, pop, quit</string>
+    
+    <!-- Button Labels -->
+    <string name="btn_push">PUSH</string>
+    <string name="btn_pop">POP</string>
+    <string name="btn_quit">QUIT</string>
+    <string name="btn_execute">RUN</string>
+    <string name="btn_clear">CLEAR</string>
+    
+    <!-- Messages -->
+    <string name="msg_welcome">Welcome to StackApp!</string>
+    <string name="msg_pushed">%d is pushed.</string>
+    <string name="msg_popped">%d is popped.</string>
+    <string name="msg_stack_full">Stack is FULL.</string>
+    <string name="msg_stack_empty">Stack is EMPTY.</string>
+    <string name="msg_exit">Exiting StackApp. Goodbye!</string>
+    
+    <!-- Error Messages -->
+    <string name="error_invalid_value">Invalid value. Please enter an integer between 0 and 9.</string>
+    <string name="error_invalid_command">Invalid command. Use \'push X\', \'pop\', or \'quit\'.</string>
+    <string name="error_push_missing_value">Push requires a value. Usage: \'push X\' where X is 0-9.</string>
+</resources>

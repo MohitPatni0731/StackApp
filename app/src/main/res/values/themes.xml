@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Enhanced Theme for StackApp
+    Premium dark theme with elegant styling
+-->
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.StackApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/primary_light</item>
+        <item name="colorSecondaryVariant">@color/primary</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        
+        <!-- Background and surface colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/card_background</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        
+        <!-- Status bar - fully immersive dark -->
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_muted</item>
+        
+        <!-- Input styling -->
+        <item name="colorControlNormal">@color/border</item>
+        <item name="colorControlActivated">@color/primary</item>
+        <item name="colorControlHighlight">@color/primary_light</item>
+        
+        <!-- Cursor and selection -->
+        <item name="android:colorAccent">@color/primary</item>
+        <item name="android:textColorHighlight">@color/primary_dark</item>
+        
+        <!-- Ripple color -->
+        <item name="android:colorControlHighlight">@color/primary_light</item>
+        
+        <!-- Window background -->
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+</resources>

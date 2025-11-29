@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Enhanced Layout for StackApp Main Activity
+    Modern, premium dark theme with elegant styling
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <!-- App Title Header with Glow Effect -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:letterSpacing="0.05"
+            android:shadowColor="@color/primary"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_subtitle"
+            android:textSize="12sp"
+            android:textColor="@color/text_muted"
+            android:letterSpacing="0.02"
+            android:paddingTop="4dp" />
+
+    </LinearLayout>
+
+    <!-- Stack Display Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_stack_display"
+        android:padding="20dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_stack"
+            android:textSize="11sp"
+            android:textColor="@color/primary_light"
+            android:textAllCaps="true"
+            android:letterSpacing="0.15"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/stackDisplayTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stack []"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/stack_normal"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingBottom="4dp" />
+
+    </LinearLayout>
+
+    <!-- Console Output Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/bg_console"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp">
+
+        <!-- Console Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical">
+
+            <!-- Terminal Dots -->
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/dot_red" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/dot_yellow" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/dot_green" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Console Output"
+                android:textSize="11sp"
+                android:textColor="@color/text_muted"
+                android:textAllCaps="true"
+                android:letterSpacing="0.1"
+                android:gravity="center"
+                android:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/border" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:fillViewport="true"
+            android:scrollbarThumbVertical="@drawable/scrollbar_thumb">
+
+            <TextView
+                android:id="@+id/outputTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/console_text"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="6dp" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- Quick Push Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/inputEditText"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="@string/hint_value"
+            android:textColorHint="@color/text_muted"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <Button
+            android:id="@+id/pushButton"
+            android:layout_width="120dp"
+            android:layout_height="56dp"
+            android:text="@string/btn_push"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/bg_button_push"
+            android:stateListAnimator="@null"
+            android:letterSpacing="0.05" />
+
+    </LinearLayout>
+
+    <!-- Action Buttons Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/popButton"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="@string/btn_pop"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/bg_button_pop"
+            android:stateListAnimator="@null"
+            android:letterSpacing="0.05" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="@string/btn_clear"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_secondary"
+            android:background="@drawable/bg_button_clear"
+            android:stateListAnimator="@null"
+            android:letterSpacing="0.05" />
+
+        <Button
+            android:id="@+id/quitButton"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:text="@string/btn_quit"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/bg_button_quit"
+            android:stateListAnimator="@null"
+            android:letterSpacing="0.05" />
+
+    </LinearLayout>
+
+    <!-- Divider with Label -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/border" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or_enter_command"
+            android:textSize="11sp"
+            android:textColor="@color/text_muted"
+            android:textAllCaps="true"
+            android:letterSpacing="0.08"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/border" />
+
+    </LinearLayout>
+
+    <!-- Text Command Input Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/commandEditText"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="@string/hint_command"
+            android:textColorHint="@color/text_muted"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:fontFamily="monospace"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <Button
+            android:id="@+id/executeButton"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            android:text="@string/btn_execute"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/bg_button_execute"
+            android:stateListAnimator="@null"
+            android:letterSpacing="0.05" />
+
+    </LinearLayout>
+
+</LinearLayout>

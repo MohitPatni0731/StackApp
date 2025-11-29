@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Enhanced Color Palette for StackApp
+    Theme: Elegant dark with vibrant gradients
+-->
+<resources>
+    <!-- Primary Colors - Deep Purple to Violet -->
+    <color name="primary">#8B5CF6</color>
+    <color name="primary_dark">#7C3AED</color>
+    <color name="primary_light">#A78BFA</color>
+    
+    <!-- Background Colors - Rich dark tones -->
+    <color name="background">#0A0A0F</color>
+    <color name="background_secondary">#12121A</color>
+    <color name="card_background">#1A1A24</color>
+    <color name="card_background_elevated">#222230</color>
+    <color name="console_background">#08080C</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#FAFAFA</color>
+    <color name="text_secondary">#A1A1AA</color>
+    <color name="text_muted">#71717A</color>
+    <color name="console_text">#4ADE80</color>
+    
+    <!-- Stack State Colors - Vibrant indicators -->
+    <color name="stack_normal">#4ADE80</color>
+    <color name="stack_full">#F87171</color>
+    <color name="stack_empty">#FBBF24</color>
+    
+    <!-- Button Colors - Bold and distinct -->
+    <color name="button_push">#10B981</color>
+    <color name="button_push_pressed">#059669</color>
+    <color name="button_pop">#F59E0B</color>
+    <color name="button_pop_pressed">#D97706</color>
+    <color name="button_quit">#EF4444</color>
+    <color name="button_quit_pressed">#DC2626</color>
+    <color name="button_execute">#8B5CF6</color>
+    <color name="button_execute_pressed">#7C3AED</color>
+    <color name="button_clear">#6B7280</color>
+    <color name="button_clear_pressed">#4B5563</color>
+    
+    <!-- Accent Colors -->
+    <color name="accent_cyan">#22D3EE</color>
+    <color name="accent_pink">#F472B6</color>
+    <color name="accent_blue">#60A5FA</color>
+    
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#8B5CF6</color>
+    <color name="gradient_end">#EC4899</color>
+    
+    <!-- Border/Divider Colors -->
+    <color name="border">#27272A</color>
+    <color name="border_highlight">#3F3F46</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#4ADE80</color>
+    <color name="error">#F87171</color>
+    <color name="warning">#FBBF24</color>
+    <color name="info">#60A5FA</color>
+    
+    <!-- Material Theme Colors -->
+    <color name="colorPrimary">@color/primary</color>
+    <color name="colorPrimaryDark">@color/primary_dark</color>
+    <color name="colorAccent">@color/primary_light</color>
+</resources>
