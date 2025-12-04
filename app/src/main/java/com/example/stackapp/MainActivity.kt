@@ -268,12 +268,14 @@ class MainActivity : AppCompatActivity() {
     }
     
     /**
-     * Clear the output history
+     * Clear the output history and reset the stack
      */
     private fun clearOutput() {
         outputHistory.clear()
         outputTextView.text = ""
-        appendOutput("Output cleared.")
+        stack.clear()
+        updateStackDisplay()
+        appendOutput("Stack and output cleared.")
         appendOutput("─".repeat(40))
     }
 }

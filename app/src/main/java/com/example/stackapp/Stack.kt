@@ -115,6 +115,13 @@ class Stack {
     }
     
     /**
+     * Clear the stack (reset to empty state)
+     */
+    fun clear() {
+        top = -1
+    }
+    
+    /**
      * Get string representation of stack contents
      * Format: "Stack [elem1 elem2 elem3]" where rightmost is ToS
      * @return formatted stack string
